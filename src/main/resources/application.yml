@@ -1,0 +1,41 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: order-service
+  # ── Database ────────────────────────────────────────────────────────────────
+  datasource:
+    url: jdbc:mysql://localhost:3306/orderdb
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update       # Use 'validate' in production with Flyway migrations
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+# ── AWS Configuration ────────────────────────────────────────────────────────
+  cloud:
+    aws:
+      region:
+        static: ap-south-2    # Mumbai — closest to Hyderabad
+      credentials:
+        # Uses IAM Role automatically when running on EC2/ECS (recommended!)
+        # For local dev: set AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY env vars
+        access-key: ${AWS_ACCESS_KEY_ID}
+        secret-key: ${AWS_SECRET_ACCESS_KEY}
+
+# ── SQS Queue Name ───────────────────────────────────────────────────────────
+aws:
+  sqs:
+    order-notification-queue: order-notification-queue
+
+# ── Logging ──────────────────────────────────────────────────────────────────
+logging:
+  level:
+    com.example: DEBUG
+    io.awspring: INFO
