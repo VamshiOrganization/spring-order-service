@@ -1,4 +1,4 @@
-package com.example.model;
+package com.vmc.model;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.*;

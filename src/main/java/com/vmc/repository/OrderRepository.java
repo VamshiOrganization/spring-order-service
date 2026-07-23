@@ -1,6 +1,6 @@
-package com.example.repository;
+package com.vmc.repository;
 
-import com.example.model.Order;
+import com.vmc.model.Order;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

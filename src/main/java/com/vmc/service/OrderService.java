@@ -1,10 +1,10 @@
-package com.example.service;
+package com.vmc.service;
 
-import com.example.model.Order;
-import com.example.model.OrderDtos.PlaceOrderRequest;
-import com.example.model.OrderDtos.PlaceOrderResponse;
-import com.example.model.OrderItem;
-import com.example.repository.OrderRepository;
+import com.vmc.model.Order;
+import com.vmc.model.OrderDtos.PlaceOrderRequest;
+import com.vmc.model.OrderDtos.PlaceOrderResponse;
+import com.vmc.model.OrderItem;
+import com.vmc.repository.OrderRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

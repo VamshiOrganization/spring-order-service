@@ -1,4 +1,4 @@
-package com.example.model;
+package com.vmc.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

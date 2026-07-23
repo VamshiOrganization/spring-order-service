@@ -1,9 +1,9 @@
-package com.example.controller;
+package com.vmc.controller;
 
-import com.example.model.Order;
-import com.example.model.OrderDtos.PlaceOrderRequest;
-import com.example.model.OrderDtos.PlaceOrderResponse;
-import com.example.service.OrderService;
+import com.vmc.model.Order;
+import com.vmc.model.OrderDtos.PlaceOrderRequest;
+import com.vmc.model.OrderDtos.PlaceOrderResponse;
+import com.vmc.service.OrderService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
