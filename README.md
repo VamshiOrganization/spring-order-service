@@ -83,6 +83,9 @@ spring-order-service/
 - AWS credentials configured (see setup below)
 
 ---
+### Docker Setup
+- [Request & Response](docs/ReqAndResp.md)
+- [Run MySQL in Docker along your app](https://github.com/VamshiOrganization/Docker/blob/main/projects/databaseDependency.md)
 
 ## Local Setup
 
